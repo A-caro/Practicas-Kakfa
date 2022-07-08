@@ -1,0 +1,7 @@
+address: localhost:9092
+
+spring:
+  application:
+    name: customer-service
+
+
