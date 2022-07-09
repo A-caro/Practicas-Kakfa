@@ -13,7 +13,7 @@ public class CustomerService {
 	@Autowired
 	private KafkaTemplate<String,  Customer> producer;
 
-	@Value("{$topic.customer.name:customers}") //el topico se va a llamar customers
+	@Value("${topic.customer.name:customers}") //el topico se va a llamar customers
 	private String topicCustomer;
 
 	public Customer save(Customer customer){
